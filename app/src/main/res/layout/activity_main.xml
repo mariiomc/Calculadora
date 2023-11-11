@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/num1"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="1"
+        android:onClick="numero1"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/num0"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout3" />
+
+    <Button
+        android:id="@+id/num4"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="4"
+        android:onClick="numero4"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/num1"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout3" />
+
+    <Button
+        android:id="@+id/num7"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="7"
+        android:onClick="numero7"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/num4"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout3" />
+
+    <Button
+        android:id="@+id/coseno"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="cos"
+        android:onClick="cosinus"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/num7"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout3" />
+
+    <Button
+        android:id="@+id/seno"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="sin"
+        android:onClick="sinus"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/num8"
+        app:layout_constraintStart_toEndOf="@+id/coseno" />
+
+    <Button
+        android:id="@+id/tangente"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="tan"
+        android:onClick="tangent"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/num9"
+        app:layout_constraintStart_toEndOf="@+id/seno" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="C"
+        android:onClick="clear_pantalla"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/multiplicacion"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout3"
+        app:layout_constraintStart_toEndOf="@+id/tangente" />
+
+    <Button
+        android:id="@+id/num8"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="8"
+        android:onClick="numero8"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/num5"
+        app:layout_constraintStart_toEndOf="@+id/num7" />
+
+    <Button
+        android:id="@+id/num9"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="9"
+        android:onClick="numero9"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/num6"
+        app:layout_constraintStart_toEndOf="@+id/num8" />
+
+    <Button
+        android:id="@+id/multiplicacion"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="x"
+        android:onClick="multiplicar"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/division"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout3"
+        app:layout_constraintStart_toEndOf="@+id/num9" />
+
+    <Button
+        android:id="@+id/num5"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="5"
+        android:onClick="numero5"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/num2"
+        app:layout_constraintStart_toEndOf="@+id/num4" />
+
+    <Button
+        android:id="@+id/num6"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="6"
+        android:onClick="numero6"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/num3"
+        app:layout_constraintStart_toEndOf="@+id/num5" />
+
+    <Button
+        android:id="@+id/division"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="/"
+        android:onClick="dividir"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/resta"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout3"
+        app:layout_constraintStart_toEndOf="@+id/num6" />
+
+    <Button
+        android:id="@+id/num3"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="3"
+        android:onClick="numero3"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/igual"
+        app:layout_constraintStart_toEndOf="@+id/num2" />
+
+    <Button
+        android:id="@+id/num2"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="2"
+        android:onClick="numero2"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/punto"
+        app:layout_constraintStart_toEndOf="@+id/num1" />
+
+    <Button
+        android:id="@+id/resta"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="-"
+        android:onClick="restar"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/suma"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout3"
+        app:layout_constraintStart_toEndOf="@+id/num3" />
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/num0"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="0"
+        android:onClick="numero0"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout3"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout3" />
+
+    <Button
+        android:id="@+id/punto"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="10dp"
+        android:text="·"
+        android:onClick="punto"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout3"
+        app:layout_constraintStart_toEndOf="@+id/num0" />
+
+    <Button
+        android:id="@+id/igual"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="10dp"
+        android:text="="
+        android:onClick="igualar"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout3"
+        app:layout_constraintStart_toEndOf="@+id/punto" />
+
+    <Button
+        android:id="@+id/suma"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="+"
+        android:onClick="sumar"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout3"
+        app:layout_constraintStart_toEndOf="@+id/igual" />
+
+    <TextView
+        android:id="@+id/pantalla"
+        android:layout_width="381dp"
+        android:layout_height="87dp"
+        android:text="0.0"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout3"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout3"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout3"
+        app:layout_constraintVertical_bias="0.19" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
